@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - Kadson Pedro</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Kadson Pedro</a>
+            </div>
+            <nav aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="mentorias.html">Mentorias</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Cursos em Desenvolvimento</h1>
+                <p class="subtitle">Em breve, conteúdo prático e objetivo para impulsionar sua carreira</p>
+            </div>
+        </section>
+
+        <section class="container courses-info">
+            <div class="info-grid">
+                <div class="info-card development">
+                    <i class="fas fa-code"></i>
+                    <h2>Em Produção</h2>
+                    <p>Estou preparando cursos focados em:</p>
+                    <ul>
+                        <li>HTML, CSS e JavaScript</li>
+                        <li>Desenvolvimento Frontend</li>
+                        <li>Boas práticas de código</li>
+                        <li>Projetos práticos</li>
+                    </ul>
+                </div>
+
+                <div class="info-card methodology">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h2>Metodologia</h2>
+                    <ul>
+                        <li>Aulas objetivas e práticas</li>
+                        <li>Projetos do mundo real</li>
+                        <li>Código fonte comentado</li>
+                        <li>Suporte via comunidade</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="container notification-list">
+            <h2>Fique por Dentro</h2>
+            <p>Cadastre-se para receber novidades sobre o lançamento dos cursos</p>
+            
+            <form id="notification-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="from_name" required placeholder="Seu nome completo">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="from_email" required placeholder="Seu melhor email">
+                </div>
+                <div class="form-group">
+                    <label for="course">Curso de Interesse</label>
+                    <select id="course" name="course" required>
+                        <option value="">Selecione um curso</option>
+                        <option value="html-css">HTML e CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="frontend">Desenvolvimento Frontend</option>
+                        <option value="todos">Todos os cursos</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-button">
+                    <span class="button-text">Receber Novidades</span>
+                    <span class="button-loader" style="display: none;">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </span>
+                </button>
+            </form>
+            <div id="form-feedback" class="form-feedback" style="display: none;"></div>
+        </section>
+
+        <section class="container blog-section">
+            <h2>Conteúdo Gratuito</h2>
+            <div class="posts-grid">
+                <article class="post">
+                    <img src="assets/images/produtividade.jpg" alt="Produtividade" class="post-image">
+                    <div class="post-content">
+                        <span class="post-category">Produtividade</span>
+                        <h3>Como Construir uma Rotina Produtiva</h3>
+                        <p>Um guia completo para otimizar seu tempo e alcançar melhores resultados nos estudos.</p>
+                        <a href="post.html?post=produtividade" class="read-more">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Kadson Pedro. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="politica.html">Política de Privacidade</a>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init({
+                publicKey: "639peYCntwvgbJXOH",
+                blockHeadless: false,
+                limitRate: {
+                    throttle: 10000
+                }
+            });
+        })();
+
+        document.getElementById("notification-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const button = this.querySelector('.submit-button');
+            const buttonText = button.querySelector('.button-text');
+            const buttonLoader = button.querySelector('.button-loader');
+            const feedback = document.getElementById('form-feedback');
+
+            buttonText.style.display = 'none';
+            buttonLoader.style.display = 'inline-block';
+            button.disabled = true;
+            feedback.style.display = 'none';
+
+            const templateParams = {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                course: document.getElementById('course').value,
+                type: "lista-espera-curso"
+            };
+
+            emailjs.send(
+                'service_sfcgswc',
+                'template_um5hyie',
+                templateParams,
+                '639peYCntwvgbJXOH'
+            )
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                feedback.textContent = 'Inscrição realizada com sucesso! Você receberá as novidades em primeira mão.';
+                feedback.className = 'form-feedback success';
+                feedback.style.display = 'block';
+                e.target.reset();
+            })
+            .catch(function(error) {
+                console.error('FAILED...', error);
+                feedback.textContent = `Erro ao enviar: ${error.text}`;
+                feedback.className = 'form-feedback error';
+                feedback.style.display = 'block';
+            })
+            .finally(function() {
+                buttonText.style.display = 'inline-block';
+                buttonLoader.style.display = 'none';
+                button.disabled = false;
+            });
+        });
+    </script>
+</body>
+</html> 

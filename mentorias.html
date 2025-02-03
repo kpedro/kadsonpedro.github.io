@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorias - Kadson Pedro</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Kadson Pedro</a>
+            </div>
+            <nav aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="mentorias.html">Mentorias</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Programa de Mentorias</h1>
+                <p class="subtitle">Em breve, uma jornada personalizada para seu desenvolvimento profissional</p>
+            </div>
+        </section>
+
+        <section class="container mentorship-info">
+            <div class="info-grid">
+                <div class="info-card preparation">
+                    <i class="fas fa-rocket"></i>
+                    <h2>Em Preparação</h2>
+                    <p>Estou desenvolvendo um programa de mentoria focado em:</p>
+                    <ul>
+                        <li>Desenvolvimento Web</li>
+                        <li>Boas práticas de programação</li>
+                        <li>Carreira em tecnologia</li>
+                        <li>Produtividade e organização</li>
+                    </ul>
+                </div>
+
+                <div class="info-card features">
+                    <i class="fas fa-star"></i>
+                    <h2>O que esperar</h2>
+                    <ul>
+                        <li>Sessões personalizadas</li>
+                        <li>Acompanhamento individual</li>
+                        <li>Material de apoio exclusivo</li>
+                        <li>Projetos práticos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="container waiting-list">
+            <h2>Lista de Espera</h2>
+            <p>Quer ser um dos primeiros a saber quando as mentorias estiverem disponíveis?</p>
+            
+            <form id="waitlist-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="from_name" required placeholder="Seu nome completo">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="from_email" required placeholder="Seu melhor email">
+                </div>
+                <div class="form-group">
+                    <label for="interest">Área de Interesse</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">Selecione uma área</option>
+                        <option value="dev-web">Desenvolvimento Web</option>
+                        <option value="carreira">Carreira em Tecnologia</option>
+                        <option value="produtividade">Produtividade</option>
+                        <option value="geral">Interesse Geral</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-button">
+                    <span class="button-text">Entrar na Lista de Espera</span>
+                    <span class="button-loader" style="display: none;">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </span>
+                </button>
+            </form>
+            <div id="form-feedback" class="form-feedback" style="display: none;"></div>
+        </section>
+
+        <section class="container blog-section">
+            <h2>Conteúdo Relacionado</h2>
+            <div class="posts-grid">
+                <article class="post">
+                    <img src="assets/images/mentoria.jpg" alt="Mentoria" class="post-image">
+                    <div class="post-content">
+                        <span class="post-category">Desenvolvimento</span>
+                        <h3>Mentoria: O Caminho para o Crescimento</h3>
+                        <p>Descubra como a mentoria pode acelerar seu desenvolvimento pessoal e profissional.</p>
+                        <a href="post.html?post=mentoria" class="read-more">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Kadson Pedro. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="politica.html">Política de Privacidade</a>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init({
+                publicKey: "639peYCntwvgbJXOH",
+                blockHeadless: false,
+                limitRate: {
+                    throttle: 10000
+                }
+            });
+        })();
+
+        document.getElementById("waitlist-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const button = this.querySelector('.submit-button');
+            const buttonText = button.querySelector('.button-text');
+            const buttonLoader = button.querySelector('.button-loader');
+            const feedback = document.getElementById('form-feedback');
+
+            buttonText.style.display = 'none';
+            buttonLoader.style.display = 'inline-block';
+            button.disabled = true;
+            feedback.style.display = 'none';
+
+            const templateParams = {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                interest: document.getElementById('interest').value,
+                type: "lista-espera-mentoria"
+            };
+
+            emailjs.send(
+                'service_sfcgswc',
+                'template_um5hyie',
+                templateParams,
+                '639peYCntwvgbJXOH'
+            )
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                feedback.textContent = 'Inscrição realizada com sucesso! Você receberá as novidades em primeira mão.';
+                feedback.className = 'form-feedback success';
+                feedback.style.display = 'block';
+                e.target.reset();
+            })
+            .catch(function(error) {
+                console.error('FAILED...', error);
+                feedback.textContent = `Erro ao enviar: ${error.text}`;
+                feedback.className = 'form-feedback error';
+                feedback.style.display = 'block';
+            })
+            .finally(function() {
+                buttonText.style.display = 'inline-block';
+                buttonLoader.style.display = 'none';
+                button.disabled = false;
+            });
+        });
+    </script>
+</body>
+</html> 

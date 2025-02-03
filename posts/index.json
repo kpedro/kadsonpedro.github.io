@@ -1,0 +1,26 @@
+[
+    {
+        "id": "saude-mental",
+        "title": "Como Cuidar da Saúde Mental",
+        "description": "Dicas práticas para manter o equilíbrio emocional",
+        "category": "Saúde",
+        "date": "2024-02-18",
+        "image": "saude-mental.jpg"
+    },
+    {
+        "id": "produtividade",
+        "title": "Como Construir uma Rotina Produtiva",
+        "description": "Estratégias para otimizar seu tempo e resultados",
+        "category": "Desenvolvimento",
+        "date": "2024-02-15",
+        "image": "produtividade.jpg"
+    },
+    {
+        "id": "mentalidade",
+        "title": "Mentalidade Empreendedora",
+        "description": "Como pensar como um empreendedor de sucesso",
+        "category": "Desenvolvimento",
+        "date": "2024-01-31",
+        "image": "mentalidade.jpg"
+    }
+] 

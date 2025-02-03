@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Kadson Pedro</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Kadson Pedro</a>
+            </div>
+            <nav aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="mentorias.html">Mentorias</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Entre em Contato</h1>
+                <p>Vamos conversar sobre:</p>
+                <ul>
+                    <li>Mentorias personalizadas</li>
+                    <li>Parcerias e colaborações</li>
+                    <li>Palestras e eventos</li>
+                    <li>Consultoria empresarial</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Informações de Contato</h2>
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <p>WhatsApp: <a href="https://wa.me/SEU_NUMERO" target="_blank">Clique aqui para conversar</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="far fa-envelope"></i>
+                            <p>Email: <a href="mailto:seu-email@dominio.com">seu-email@dominio.com</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <p>Instagram: <a href="https://instagram.com/seu-perfil" target="_blank">@seu-perfil</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="from_name" placeholder="Digite seu nome completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="from_email" placeholder="Digite seu melhor e-mail" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">WhatsApp</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Digite seu WhatsApp" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <select id="subject" name="contact_type" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="mentoria">Quero contratar mentoria</option>
+                            <option value="parceria">Proposta de parceria</option>
+                            <option value="palestra">Contratação para evento/palestra</option>
+                            <option value="consultoria">Consultoria empresarial</option>
+                            <option value="outro">Outro assunto</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Como posso ajudar você?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        <span class="button-text">Enviar Mensagem</span>
+                        <span class="button-loader" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </button>
+                </form>
+            </div>
+            <div id="form-feedback" class="form-feedback" style="display: none;"></div>
+        </section>
+
+        <div class="contact-options">
+            <div class="contact-card mentoring">
+                <h3>Mentoria Individual</h3>
+                <p>Agende uma sessão de mentoria personalizada</p>
+                <a href="#" class="cta-button">Agendar Mentoria</a>
+            </div>
+            
+            <div class="contact-card business">
+                <h3>Parcerias e Negócios</h3>
+                <p>Vamos discutir oportunidades de colaboração</p>
+                <a href="#" class="cta-button">Propor Parceria</a>
+            </div>
+            
+            <div class="contact-card speaking">
+                <h3>Eventos e Palestras</h3>
+                <p>Contrate para seu evento ou empresa</p>
+                <a href="#" class="cta-button">Solicitar Proposta</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Kadson Pedro. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init({
+                publicKey: "639peYCntwvgbJXOH",
+                blockHeadless: false,
+                limitRate: {
+                    throttle: 10000
+                }
+            });
+        })();
+
+        document.getElementById("contact-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            // Atualiza estado do botão
+            const button = this.querySelector('.submit-button');
+            const buttonText = button.querySelector('.button-text');
+            const buttonLoader = button.querySelector('.button-loader');
+            const feedback = document.getElementById('form-feedback');
+
+            buttonText.style.display = 'none';
+            buttonLoader.style.display = 'inline-block';
+            button.disabled = true;
+            feedback.style.display = 'none';
+
+            // Prepara os dados do template
+            const templateParams = {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                contact_type: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+
+            // Envia o email
+            emailjs.send(
+                'service_sfcgswc',
+                'template_um5hyie',
+                templateParams,
+                '639peYCntwvgbJXOH'
+            )
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                feedback.textContent = 'Mensagem enviada com sucesso! Retornarei em breve.';
+                feedback.className = 'form-feedback success';
+                feedback.style.display = 'block';
+                e.target.reset();
+            })
+            .catch(function(error) {
+                console.error('FAILED...', error);
+                feedback.textContent = `Erro ao enviar: ${error.text}`;
+                feedback.className = 'form-feedback error';
+                feedback.style.display = 'block';
+            })
+            .finally(function() {
+                buttonText.style.display = 'inline-block';
+                buttonLoader.style.display = 'none';
+                button.disabled = false;
+            });
+        });
+    </script>
+</body>
+</html>
