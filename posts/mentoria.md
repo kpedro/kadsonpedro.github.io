@@ -1,105 +1,118 @@
-# Programa de Mentoria
+# Mentoria em Desenvolvimento de Software
 
-📅 15 de Fevereiro de 2024
+📅 15 de Março de 2024
 ✍️ Por Kadson Pedro
-🏷️ Marketing
+🏷️ Desenvolvimento
 
-<img src="../assets/images/mentoria.jpg" alt="Programa de Mentoria" style="max-width: 100%; height: auto;">
-<em>Transforme sua vida através da mentoria personalizada</em>
+![Mentoria em Desenvolvimento](../assets/images/mentoria.jpg)
+*Acelere sua carreira em tecnologia com mentoria personalizada*
 
 ## Introdução
 
-Nossa mentoria é um programa personalizado que combina desenvolvimento pessoal e profissional para impulsionar seus resultados. Através de um acompanhamento individualizado, você terá as ferramentas e o suporte necessários para alcançar seus objetivos.
+A jornada no desenvolvimento de software é complexa e dinâmica. Com mais de 10 anos de experiência em desenvolvimento e liderança técnica, desenvolvi um programa de mentoria que acelera o crescimento de desenvolvedores através de um acompanhamento personalizado e prático.
 
 ## O que você vai aprender
 
-### 1. Estratégia de Negócios
-- Planejamento estratégico
-- Gestão de tempo
-- Produtividade e resultados
+### 1. Fundamentos Sólidos
+- Arquitetura de Software
+- Clean Code e Boas Práticas
+- Design Patterns
+- SOLID Principles
 
-### 2. Marketing de Relacionamento
-- Construção de rede qualificada
-- Comunicação efetiva
-- Vendas consultivas
+### 2. Habilidades Práticas
+- Git Avançado e Workflow
+- CI/CD e DevOps
+- Testes e TDD
+- Code Review Efetivo
 
-### 3. Desenvolvimento Pessoal
-- Mindset empreendedor
-- Inteligência emocional
-- Liderança autêntica
+### 3. Soft Skills para Devs
+- Comunicação Técnica
+- Liderança em Tecnologia
+- Gestão de Tempo
+- Resolução de Problemas
 
 ## Como Funciona
 
-1. **Diagnóstico Inicial**
-   - Avaliação do momento atual
-   - Definição de objetivos claros
-   - Plano de ação personalizado
+1. **Avaliação Técnica**
+   - Análise do nível atual
+   - Identificação de gaps
+   - Definição de objetivos técnicos
 
-2. **Encontros Semanais**
-   - Acompanhamento individual
-   - Exercícios práticos
-   - Feedback constante
+2. **Sessões Práticas**
+   - Pair Programming
+   - Code Review
+   - Projetos Práticos
+   - Desafios Semanais
 
-3. **Suporte Contínuo**
-   - Grupo exclusivo de alunos
-   - Material complementar
-   - Networking qualificado
+3. **Acompanhamento Contínuo**
+   - Repositório compartilhado
+   - Feedback em tempo real
+   - Suporte via Discord
+   - Recursos exclusivos
 
-## Benefícios da Mentoria
+## Benefícios do Programa
 
-- Aceleração de resultados
-- Clareza de objetivos
-- Desenvolvimento de habilidades
-- Networking estratégico
-- Suporte personalizado
+- Evolução técnica acelerada
+- Projetos para portfolio
+- Network com outros devs
+- Preparação para entrevistas
+- Direcionamento de carreira
 
 ## Depoimentos
 
-> "A mentoria transformou minha visão de negócios. Em 3 meses, consegui resultados que buscava há anos." - Maria Silva
+> "Em 6 meses de mentoria, passei de Jr para Pleno e aumentei meu salário em 70%. O foco em projetos práticos fez toda diferença." - Pedro Silva, Dev Backend
 
-> "O programa é completo e o Kadson tem uma capacidade incrível de identificar pontos de melhoria." - João Santos
+> "A mentoria me ajudou a entender conceitos avançados de forma prática. Hoje lidero uma equipe de 5 devs." - Ana Santos, Tech Lead
 
-## Investimento
+## Planos de Mentoria
 
 ### Planos Disponíveis
 
 | Plano | Duração | Benefícios |
 |-------|----------|------------|
-| Essential | 3 meses | Mentoria quinzenal + Material |
-| Premium | 6 meses | Mentoria semanal + Material + Grupo VIP |
-| Master | 12 meses | Tudo do Premium + Consultoria Individual |
+| Dev Starter | 3 meses | Mentoria quinzenal + Projetos + Discord |
+| Dev Pro | 6 meses | Mentoria semanal + Projetos + Discord + Code Review |
+| Dev Master | 12 meses | Tudo do Pro + Preparação para Tech Lead |
+
+## Tecnologias Abordadas
+
+javascript
+const techStack = {
+frontend: ['React', 'Next.js', 'TypeScript'],
+backend: ['Node.js', 'Python', 'Java'],
+devops: ['Docker', 'AWS', 'CI/CD'],
+databases: ['PostgreSQL', 'MongoDB', 'Redis'],
+practices: ['TDD', 'Clean Code', 'SOLID']
+}
 
 ## Próximos Passos
 
-Está pronto para transformar sua vida e negócio?
+Pronto para acelerar sua carreira?
 
-1. [Agende uma chamada gratuita](#)
-2. [Conheça nossos cases](#)
-3. [Tire suas dúvidas](#)
-
----
-
-### Bônus Exclusivos
-
-📚 **Ao iniciar sua mentoria, você recebe:**
-- E-book "Mindset Empreendedor"
-- Template de Planejamento Estratégico
-- Acesso à Comunidade VIP
+1. [Agende uma sessão gratuita](#)
+2. [Veja projetos dos mentorados](#)
+3. [Entre no Discord da comunidade](#)
 
 ---
 
-**Vagas Limitadas!** Garanta sua transformação agora mesmo.
+### Bônus para Iniciantes
 
-[Agendar Chamada](#) | [Falar no WhatsApp](#)
+📚 **Ao iniciar sua mentoria:**
+- Acesso ao curso "Git na Prática"
+- Templates de Arquitetura
+- Roadmap personalizado
+- Comunidade exclusiva no Discord
 
-# Mentoria: O Caminho para o Crescimento
+---
 
-📅 15 de Março de 2024
-✍️ Kadson Pedro
-🏷️ Desenvolvimento Pessoal
+**Vagas Limitadas:** Apenas 5 vagas por turma para garantir atenção individualizada.
 
-<img src="../assets/images/mentoria.jpg" alt="Mentoria" style="max-width: 100%; height: auto;">
-<em>Imagem: Sessão de mentoria em desenvolvimento profissional</em>
+[Agendar Conversa](#) | [Ver Projetos](#) | [FAQ](#)
 
-[restante do conteúdo...]
+## Garantia de Satisfação
 
+Se após 15 dias você não estiver satisfeito com o programa, devolvemos 100% do seu investimento. Nosso compromisso é com seu crescimento real.
+
+---
+
+*"O código é poesia, e todo desenvolvedor pode ser um artista."*
