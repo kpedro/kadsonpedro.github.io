@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Blog Kadson Pedro
 
 Blog pessoal e profissional focado em desenvolvimento, tecnologia e crescimento profissional.
@@ -29,3 +30,6 @@ Para contribuições ou dúvidas, entre em contato:
 ## 📄 Licença
 
 MIT License - Veja o arquivo [LICENSE.md](LICENSE.md) para detalhes. 
+=======
+# kadsonpedro.github.io
+>>>>>>> 22ae62e6f651658cd78c390f8b218559f704597c
