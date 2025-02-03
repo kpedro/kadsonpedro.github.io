@@ -4,8 +4,8 @@
 ✍️ Por Kadson Pedro
 🏷️ Marketing
 
-![Programa de Mentoria](../assets/images/mentoria.jpg)
-*Transforme sua vida através da mentoria personalizada*
+<img src="../assets/images/mentoria.jpg" alt="Programa de Mentoria" style="max-width: 100%; height: auto;">
+<em>Transforme sua vida através da mentoria personalizada</em>
 
 ## Introdução
 
@@ -98,8 +98,8 @@ Está pronto para transformar sua vida e negócio?
 ✍️ Kadson Pedro
 🏷️ Desenvolvimento Pessoal
 
-![Mentoria](../assets/images/mentoria.jpg)
-*Imagem: Sessão de mentoria em desenvolvimento profissional*
+<img src="../assets/images/mentoria.jpg" alt="Mentoria" style="max-width: 100%; height: auto;">
+<em>Imagem: Sessão de mentoria em desenvolvimento profissional</em>
 
 [restante do conteúdo...]
 
